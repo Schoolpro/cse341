@@ -4,3 +4,10 @@ GET http://localhost:3000/contacts
 
 ### Obtener un solo contacto por ID
 GET http://localhost:3000/contacts/6abb34146282d92bcf71a2d3
+
+### Obtener todos los contactos desde Render
+GET https://cse341-fsmg.onrender.com/contacts
+
+
+### Obtener un solo contacto por ID desde Render
+GET https://cse341-fsmg.onrender.com/contacts/6abb34146282d92bcf71a2d3
