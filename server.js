@@ -11,6 +11,9 @@ const mongodb = require('./data/database');
 // Usa el puerto de Render o 3000 cuando trabajamos localmente
 const port = process.env.PORT || 3000;
 
+// Permite que Express lea JSON enviado en POST y PUT
+app.use(express.json());
+
 // Conecta todas nuestras rutas
 app.use('/', routes);
 

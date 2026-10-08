@@ -16,5 +16,21 @@ router.get('/', contactsController.getAll);
 // Ejemplo: /contacts/6abb34146282d92bcf71a2d3
 router.get('/:id', contactsController.getSingle);
 
+
+// POST /contacts
+// Crea un nuevo contacto
+router.post('/', contactsController.createContact);
+
+// PUT /contacts/:id
+// Actualiza un contacto existente
+router.put('/:id', contactsController.updateContact);
+
+// DELETE /contacts/:id
+// Elimina un contacto
+router.delete('/:id', contactsController.deleteContact);
+
+
+
+
 // Exporta el router para poder conectarlo con las otras rutas
 module.exports = router;

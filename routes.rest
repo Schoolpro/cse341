@@ -11,3 +11,30 @@ GET https://cse341-fsmg.onrender.com/contacts
 
 ### Obtener un solo contacto por ID desde Render
 GET https://cse341-fsmg.onrender.com/contacts/6abb34146282d92bcf71a2d3
+
+### Crear un contacto
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Alan",
+  "lastName": "Krebs",
+  "email": "alan@test.com",
+  "favoriteColor": "blue",
+  "birthday": "1985-01-01"
+}
+
+
+### Actualizar un contacto
+PUT http://localhost:3000/contacts/6abb34146282d92bcf71a2d3
+Content-Type: application/json
+
+{
+  "firstName": "Alan",
+  "lastName": "Krebs",
+  "email": "alankrebs@gmail.com",
+  "favoriteColor": "blue",
+  "birthday": "1985-23-01"
+}
+### Eliminar un contacto
+DELETE http://localhost:3000/contacts/6ac6f578751082b7b314b3b3
