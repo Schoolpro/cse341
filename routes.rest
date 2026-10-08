@@ -38,3 +38,30 @@ Content-Type: application/json
 }
 ### Eliminar un contacto
 DELETE http://localhost:3000/contacts/6ac6f578751082b7b314b3b3
+
+
+### Crear contacto en Render
+POST https://cse341-fsmg.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Test",
+  "lastName": "Render",
+  "email": "test@render.com",
+  "favoriteColor": "red",
+  "birthday": "2000-01-01"
+}
+### Actualizar contacto en Render
+PUT https://cse341-fsmg.onrender.com/contacts/6ac70024bbd9546f7fb7f971
+Content-Type: application/json
+
+{
+  "firstName": "Test",
+  "lastName": "Render",
+  "email": "test@render.com",
+  "favoriteColor": "green",
+  "birthday": "2000-01-01"
+}
+
+### Eliminar contacto en Render
+DELETE https://cse341-fsmg.onrender.com/contacts/6ac70024bbd9546f7fb7f971
